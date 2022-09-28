@@ -1,0 +1,30 @@
+
+body{
+    margin:0px;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+}
+
+.inner-card{
+    width:100px;
+    height:100px;
+    border-top:3px solid lightgrey;
+    border-radius: 50%;
+    animation: spin-load infinite 2s linear;
+}
+
+@keyframes spin-load {
+    0%{
+        transform: (0deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
